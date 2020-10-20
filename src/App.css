@@ -1,38 +1,229 @@
-.App {
+
+
+.myitem{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: rgb(133, 235, 235, 0.7);
+  box-shadow: 1px 1px 0.5px wheat; 
+}
+
+.bodys{
+  background-color: grey;
+  width: 500px;
+  height: 300px;
+  position: relative;
+  margin: 20px;
+}
+.pres{
+  float: left;  
+}
+.displays{
+  position: relative;
+  text-align: center;
+  background-color: gray;
+}
+.displays-inner{
+  position: relative;
+  display: block;
+  margin: 2px;
+  background-color: white;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.operatekeys {
+  background-color: #eee;
+  border: thin solid #ddd;
+  width: 25px;
+  height: 25px;
+  margin: 12px;
+  font-size: 15px;
+}
+.fullkeys{
+  width: 100%;
+  height: 200px;
+}
+
+.keys {
+  background-color: #eee;
+  border: thin solid #ddd;
+  width: 45px;
+  height: 45px;
+  margin: 10px;
+  font-size: 25px;
+}
+
+.keys:focus, .keys:active {
+  outline: none;
+  border: thin solid #ddd;
+}
+
+.presskey {
+  position: relative;
+	display: inline-block;
+  margin: 35px 25px;
+  background-color: white;
+}
+
+.star {
+	display: inline-block;
+  margin: 0 15px;
+}
+
+.star:after {
+  content: "\2605";
+  font-size: 45px;
+}
+.lefts{
+  width: 250px;
+  height: 300px;
+  background-color: hotpink;
+  float: left;
+  position: relative;
+  
+}
+.rights{
+  width: 250px;
+  height: 300px;
+  float: right;
+  background-color:  rgb(135, 233, 218);
+  position: relative;
+}
+.presskeys {
+  position: relative;
+	display: inline-block;
+  margin: 25px 20px;
+  background-color: white;
+}
+.calcrights{
+  width: 250px;
+  height: 450px;
+  margin: 20px;
+  background-color:  rgb(135, 233, 218);
+  position: relative;
+}
+.left, .right{
+  padding-left: 20px;
+  padding-top: 15px;
+  float: left;
+  font-weight: bold;
+  
+}
+.right{
+  float: right;
+  color:  rgb(135, 233, 218);
+  font-weight: bolder;
+  font-size: 20px;
+  padding-top: 15px;
+  padding-right: 20px;
+}
+.unit{
+  position: relative;
+  float: left;
+  padding-left: 20px;
+  padding-top: 10px;
+  width: 50%;
+  height: 35%;
+  font-weight: lighter;
+
+}
+.obj{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+.relate{
+  position: relative;
+}
+
+.full{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: teal;
+}
+.compare{
+  position: absolute;
+  border: solid 1px white;
+  padding: 10px;
+  color: wheat;
+  top: 35%;
+  left: 35%;
+  transform: scale(0);
+}
+tr{color: tomato;
+  
+}
+.tabrow{ 
+  font-size: 18px;
+  padding: 5px;
+  width: 300px;
+  background-color: #e0d4d4;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.compares{
+  position: relative;
+  width: 1000px;
+  height: 700px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.content_display{
+  position: relative;
+  width: 100%;
+  height: 70%;
+  padding: 25px;
 }
-
-.App-link {
-  color: #61dafb;
+.compare_display{
+  position: relative;
+  width: 100%;
+  height: 50%;
+  float: left;
+  padding-left: 40px;
 }
+.item-desc{
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  top: 80%;
+  background-color: white;
+}
+.price{
+  background-color: red;
+  width: 100%;
+  height: 100%;
+}
+.product{
+  float: left;
+  width: 50% ;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.product-image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.price-tag{
+  width: 50%;
+  float: right;
+}
+.quantity{
+  float: left;
+  padding-top: 10px;
+}
+.content{
+  position: relative;
+  margin: 20px;
+  float: left;
+  width: 20%;
+  height: 400px;
+  background-color: turquoise;
+}
+.content:hover .myitem {
+		box-shadow: 0.6px 0.6px 0.5px 0.5px grey;
+}
+.content:hover .compare{
+  transform: scale(1);
 }
