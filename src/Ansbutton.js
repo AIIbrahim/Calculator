@@ -22,11 +22,11 @@ function Ansbutton (props){
       }else if(props.status === 1){      
       props.setSecondValue(props.secondValue.replace( props.secondValue.slice(-1), ''))
       }else{
-        /*props.setFirstValue(' '),
-        props.setSecondValue(' '),
-        props.setAnswer(''),
-        props.setOperate(''),
-        props.setStatus(0)*/
+        props.setFirstValue(' ');
+        props.setSecondValue(' ');
+        props.setAnswer(' ');
+        props.setOperate(' ');
+        props.setStatus(0);
       }
 
     }
