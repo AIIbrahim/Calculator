@@ -12,8 +12,21 @@ function Calculator(){
     const [secondValue, setSecondValue] = useState(' ');
     const [operate, setOperate] = useState(' ');
     const operations =['+', '-', '*','/'];
-    const digits = [1,2,3,4,5,6,7,8,9,0,'.'];
-
+    const digits = [1,2,3,4,5,6,7,8,9];
+    const zeropressed = ()=>{
+      if(status ===0){
+        setFirstValue(firstValue.concat(0))   
+      }else{
+        setSecondValue(secondValue.concat(0))
+        }
+    }
+    const dotpressed = ()=>{
+      if(status ===0){
+        setFirstValue(firstValue.concat('.'))   
+      }else{
+        setSecondValue(secondValue.concat('.'))
+        }
+    }
     return (
       <div className="calcrights">
 
@@ -26,24 +39,26 @@ function Calculator(){
 
         <div className="keypad">
           <div className='operation'>
-            
             {operations.map(operation =>
               <Button key={operation}  setOperate={setOperate} setStatus={setStatus} operation={operation} > 
                 </Button>)}
           </div>
           <div className='fullkeys'>
+          
            {digits.map(digit =>
               <Keybutton key={digit}  digit={digit} 
                          status={status} firstValue={firstValue} setFirstValue={setFirstValue}
                          secondValue={secondValue} setSecondValue={setSecondValue}>
                 {digit}</Keybutton>)} 
-              
+            <button className="dot" onClick={zeropressed}> 0 </button>
+            <button className="dot" onClick={dotpressed}> . </button>
+         
             <Ansbutton val={'='} val2={'c'} status={status} operate={operate} 
                       firstValue={firstValue} secondValue={secondValue}
                       setAnswer={setAnswer} setStatus={setStatus} setOperate={setOperate}
                       setFirstValue={setFirstValue} setSecondValue={setSecondValue}
             />
-   
+           
           </div>
 
         </div>

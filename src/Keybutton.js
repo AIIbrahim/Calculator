@@ -3,7 +3,6 @@ import './App.css';
 
 
 function Keybutton (props){ 
-     
         const pressed = ()=>{
           console.log(props.status);
           if(props.status ===0){
@@ -13,7 +12,9 @@ function Keybutton (props){
             }
         }
         return(
-          <button  className="keys" onClick={pressed} >{props.digit}</button>
+        <div className="numbers">   
+          <button  className="digits" onClick={pressed} >{props.digit}</button>
+        </div>
          )
 
 }

@@ -31,10 +31,10 @@ function Ansbutton (props){
 
     }
      return(
-      <div className="pres">
-        <button className="keys"  onClick={result} >{props.val}</button>
-        <button  className="keys" onClick={onclear} >{props.val2}</button>
-      </div>
+      <div className="pre">
+        <button  className="dots" onClick={onclear} >{props.val2}</button>
+        <button className="zero"  onClick={result} >{props.val}</button>
+        </div>
      )
      
         

@@ -15,48 +15,65 @@
   position: relative;
   margin: 20px;
 }
+
 .pres{
   float: left;  
 }
 .displays{
-  position: relative;
-  text-align: center;
-  background-color: gray;
+  background-color: white;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 85%;
 }
 .displays-inner{
-  position: relative;
   display: block;
   margin: 2px;
-  background-color: white;
+  position: relative;
   text-align: right;
-  padding-right: 20px;
+  font-size: 20px;
+  border-bottom: 1px solid black;
 }
 
-.operatekeys {
+.operatekeys{
   background-color: #eee;
   border: thin solid #ddd;
+  font-size: 20px;
+  text-align: justify;
   width: 25px;
   height: 25px;
-  margin: 12px;
-  font-size: 15px;
+  border-radius: 50px;
+  margin-left: 30px;
+  margin-bottom: 10px;
 }
 .fullkeys{
   width: 100%;
-  height: 200px;
+  height: 75%;
+}
+.numbers{
+  width: 100%;
+  height: 50%;
+  background-color: black;
 }
 
-.keys {
+.digits,.zero, .dot,.dots{
   background-color: #eee;
   border: thin solid #ddd;
-  width: 45px;
-  height: 45px;
-  margin: 10px;
+  border-radius: 50px;
+  width: 55px;
+  height: 55px;
+  margin-left: 20px;
+  margin-bottom: 2px;
+  float: left;
   font-size: 25px;
+  
 }
-
-.keys:focus, .keys:active {
-  outline: none;
-  border: thin solid #ddd;
+.zero {
+  width: 200px;
+  height: 55px;
+}
+.dot{
+  margin-left: 20px;
 }
 
 .presskey {
@@ -97,11 +114,15 @@
   background-color: white;
 }
 .calcrights{
-  width: 250px;
+  position: absolute;
+  width: 245px;
   height: 450px;
-  margin: 20px;
-  background-color:  rgb(135, 233, 218);
-  position: relative;
+  padding: 10px;
+  top: 20%;
+  left: 30%;
+  background-color: rgb(43, 38, 38);
+  border: solid 2px rgb(61, 61, 61);
+  border-radius: 20px;
 }
 .left, .right{
   padding-left: 20px;
